@@ -2,8 +2,9 @@
   <div>
     <div class="vx-row">
      <div class="vx-col w-1/2">
+
       <vs-input
-        class="w-full"
+        class="w-full inputx"
         type="file"
         accept=".json"
         ref="jsonFile"
@@ -18,8 +19,8 @@
         <div class="append-text btn-addon">
           <!-- https://api.jsonbin.io/b/614473ad9548541c29b3b720 -->
           <vs-button @click="fetchRemoteData" :disabled="loading" color="primary">
-            <span v-if="!loading">Get Data</span>
-            <span v-else>Loading...</span>
+            <span v-if="!loading">Fetch</span>
+            <span v-else>Fetching...</span>
           </vs-button>
         </div>
       </template>
